@@ -3,28 +3,26 @@ import java.util.Scanner;
 public class SecondClass {
 
 	public static void main(String[] args) {
-	
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Podaj swój wiek");
+		System.out.println("Podaj swÃ³j wiek");
 		
-		int age = sc.nextInt();
+		int age = scanner.nextInt();
 		
-		System.out.println("Twój wiek to: "+age);
+		System.out.println("TwÃ³j wiek to:" +age);
 		
-		if ( age==18 ) {
-			System.out.println("W tym roku uzyska³eœ pe³noletnoœæ.");}
-		if (age>18) { 
-			System.out.println("Jesteœ osob¹ pe³noletni¹");
+		if (age>18) {
+			System.out.println("MoÅ¼esz kupiÄ‡ piwo od conajmniej roku");
 		}
-		else { System.out.println("Nie kupisz jeszcze piwa");
+		else if (age<18) {
+			System.out.println("Od ostatnich urodzin jesteÅ› peÅ‚noletni");
 		
+	} else (age==18) {
+				System.out.println("JesteÅ› dzieckiem");
+			}
 		}
-		
-		
 		
 	}
-	
-	
+
 	
 }
